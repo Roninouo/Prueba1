@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Título de la página</title>
+  
+  <meta charset="UTF-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link href="estilos/estilos.css" rel="stylesheet" type="text/css"></link>
+	<link href="estilos/estpapu.css" rel="stylesheet" type="text/css"></link>
+	
+</head>
+
+<body>
+
+  <h1 class="titPrin">Sobre mi gato</h1>
+  
+  <!-- Barra de navegación -->
+	
+	<nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark" data-bs-theme="dark">
+	  <div class="container-fluid">
+		<a class="navbar-brand" aria-current="page" href="index.html">Sobre mí</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarScroll">
+		  <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+			<li class="nav-item">
+			  <a class="nav-link active" href="hobbies.html">Hobbies, actividades y pasatiempos</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link active" href="inter.html">Intereses y aficiones</a>
+			</li>
+			<li class="nav-item dropdown">
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link active" href="Papu.html">Sobre mi gato</a>
+			</li>
+			<li class="nav-item">
+				<button id="cambiar-color-btn">Cambiar Color</button>
+			</li>
+		  </ul>
+		  <form class="d-flex" role="search">
+			<input class="form-control me-2" type="search" placeholder="Escribe aquí..." aria-label="Search">
+			<button class="btn btn-outline-success" type="submit">Buscar</button>
+		  </form>
+		</div>
+	  </div>
+	</nav>
+	
+	<!--Sección del gato -->
+	
+	<section id="gato-section" class="py-5">
+		<div class="container">
+		  <h2 class="text-center">Conoce a mi gato</h2>
+		  <div class="row">
+			<div class="col-md-6">
+			  <img id="pelos2" src="imgs/pelos2.jpeg" alt="Mi gato" class="img-fluid float-left">
+			</div>
+			<div class="col-md-6">
+			  <h3>Su nombre es Papu</h3>
+			  <p>Aunque también es apodado "Pelos" y es un gato rescatado con una mancha en la barbilla que parece ser una barba.</p>
+			  <ul>
+				<li>Edad: 5 años</li>
+				<li>Cumpleaños: 28 de Diciembre</li>
+				<li>Color: Blanco y negro (vaca)</li>
+				<li>Personalidad: Tranqulo, cariñoso y mañoso</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	</section>
+	
+	<!--Sewgunda sección del gato, historia -->
+
+  <section id="historias-section" class="py-5 bg-light">
+		<div class="container">
+		  <h2 class="text-center">Historia con mi gato</h2>
+		  <div class="row">
+			<div class="col-md-6">
+			  <div class="card mb-4">
+				<img src="imgs/pelos1.jpeg" alt="Historia 1" class="card-img-top">
+				<div class="card-body">
+				  <h5 class="card-title">¿Cómo conocí a Pelos?</h5>
+				  <p class="card-text">Conocí a Papu en 2017 cuando tristemente él estaba siendo maltratado por una familia. Yo tenía prohibido tener mascotas en mi casa, pero pese a ello decidí interceder por él y adoptarlo esa misma tarde. </p>
+				  <p>Y pensar que al principio mi familia no estaba de acuerdo con traerlo a la casa, hoy en día es el ser más querido y que seprocura más de la familia.</>
+				</div>
+			  </div>
+			</div>
+			<div id="pelos3" class="col-md-6">
+			  <div class="card mb-4">
+				<img src="imgs/pelos3.jpeg" alt="Historia 2" class="card-img-top">
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</section>
+
+
+	<!-- Comentarios -->
+
+	<section id="comments-section" class="py-5 bg-light">
+		<div class="container">
+		  <h2 class="text-center">Comentarios</h2>
+		  <form>
+			<div class="mb-3">
+			  <label for="name" class="form-label">Nombre</label>
+			  <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+			</div>
+			<div class="mb-3">
+			  <label for="comment" class="form-label">Comentario</label>
+			  <textarea class="form-control" id="comment" rows="3" placeholder="Deja tu comentario"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">Enviar</button>
+		  </form>
+		</div>
+	</section>
+
+	<script src="acciones/acciones.js"></script>
+  
+</body>
+
+</html>
